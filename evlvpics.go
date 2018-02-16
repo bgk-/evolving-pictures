@@ -143,6 +143,9 @@ func main() {
 	}
 	context.Call("putImageData", imgData, 10, 10)
 
+	formula := document.Call("getElementById", "formula")
+	formula.Set("innerText", pic.String())
+
 	js.Global.Get("picture").Call("addEventListener", "click", func() {
 		go func() {
 			pic.Mutate()
@@ -156,6 +159,7 @@ func main() {
 				data.SetIndex(pD+3, 0xff)
 			}
 			context.Call("putImageData", imgData, 10, 10)
+			formula.Set("innerText", pic.String())
 		}()
 	})
 

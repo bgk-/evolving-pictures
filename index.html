@@ -11,14 +11,22 @@
       margin: 0px;
       padding: 0px;
       border: 0;
-      overflow: hidden;
       display: block;
     }
   </style>
 </head>
 
 <body>
-  <canvas id="picture" style='position:absolute; left:-5px; top:-5px; padding:0px'></canvas>
+  <canvas id="picture" style='position:relative; left:-5px; top:-5px; padding:0px'></canvas>
+  <div style='margin: 10px auto; width: 100%'>
+    <h2>Evolving Pictures</h2>
+    <p>Click to change slightly (may take a few seconds on mobile and slow systems). 
+      <br>Refresh page to create an entirely new one.
+    </p>
+      Formula:
+      <p id="formula">
+      </p>
+  </div>
 </body>
 <script src="evolving-pictures-web.js" type="text/javascript"></script>
 

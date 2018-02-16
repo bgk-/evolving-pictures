@@ -13,12 +13,25 @@
       border: 0;
       display: block;
     }
+
+    canvas {
+      position: relative;
+      left: -5px;
+      top: -5px;
+      padding: 0px
+    }
+
+    .text {
+      margin: 20px 0;
+      text-align: center;
+    }
+    
   </style>
 </head>
 
 <body>
-  <canvas id="picture" style='position:relative; left:-5px; top:-5px; padding:0px'></canvas>
-  <div style='margin: 20px 0; text-align: center;'>
+  <canvas id="picture"></canvas>
+  <div class="text">
     <h2>Evolving Pictures</h2>
     <p>Click to change slightly (may take a few seconds on mobile and slow systems).
       <br>Refresh page to create an entirely new one.
@@ -28,7 +41,8 @@
     </p>
     <footer>
       Created with tutorials from Jack Mott at
-      <a href="http://www.gameswithgo.org">gameswithgo</a> and <a href="https://github.com/gopherjs/gopherjs">GopherJS</a>
+      <a href="http://www.gameswithgo.org">gameswithgo</a> and
+      <a href="https://github.com/gopherjs/gopherjs">GopherJS</a>
     </footer>
   </div>
 </body>
